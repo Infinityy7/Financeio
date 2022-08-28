@@ -65,17 +65,16 @@ def main():
 
     def button_hover(e):
         GO["bg"]="White"
-        stat_label.config(text="Submit and get savings")
+       
 
     def btn_unhvr(e):
         GO["bg"]="#BBF3D0"
-        stat_label.config(text="")
+        
         
 
 
     GO= Button(root, text="GO!", command= saving, bg = "#BBF3D0")
-    stat_label= Label(root, text="", bd=2, relief=SUNKEN, anchor= E)
-    stat_label.pack(fill=X, side=BOTTOM, ipady=2)
+    
     GO.bind("<Enter>", button_hover)
     GO.bind("<Leave>", btn_unhvr)
     GO.pack(pady=10)
@@ -101,15 +100,14 @@ def main():
 
     def buttonhvr2(e):
         Chart["bg"]= "White"
-        slabel2.config(text="Get expenditure chart")
+       
 
     def butnunhvr2(e):
         Chart["bg"]= "#BBF3D0"
-        slabel2.config(text="")
+      
 
     Chart= Button(root, text="Click to Show chart", command= chart, bg = "#BBF3D0")
-    slabel2= Label(root, text="", bd=2, relief=SUNKEN, anchor= E)
-    slabel2.pack(fill=X, side=BOTTOM, ipady=2)
+  
     Chart.bind("<Enter>",buttonhvr2)
     Chart.bind("<Leave>",butnunhvr2)
     Chart.pack(pady=10)
@@ -147,16 +145,15 @@ def main():
 
     def btnhvr3(e):
         report["bg"]="White"
-        slb3.config(text="Get feedback report")
+
     def btnuhvr3(e):
         report["bg"]="#BBF3D0"
-        slb3.config(text="")
+      
 
         
 
     report = Button(root, text = "Click to get report", command = savingTracker, bg = "#BBF3D0")
-    slb3= Label(root, text="", bd=2, relief=SUNKEN, anchor= E)
-    slb3.pack(fill=X, side=BOTTOM, ipady=2)
+    
     report.bind("<Enter>",btnhvr3)
     report.bind("<Leave>",btnuhvr3)
     report.pack(pady=10)
