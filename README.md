@@ -20,6 +20,4 @@ This app analyses your income and expenditure by inputting values and also displ
 
 
 
-email: 
-kadamyashraj299@gmail.com
-vedant.walavalkar18@gmail.com
+
